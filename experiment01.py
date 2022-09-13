@@ -81,4 +81,11 @@ plt.ylim([50, 100])
 
 plt.xlim([dt.strptime("07092022 0000", "%d%m%Y %H%M"), dt.strptime("12092022 0000", "%d%m%Y %H%M")])
 
+ax2.xaxis.set_minor_locator(AutoMinorLocator(4))
+
+ax2.yaxis.set_major_locator(MultipleLocator(10))
+ax2.yaxis.set_minor_locator(AutoMinorLocator(4))
+ax2.grid(which='major', color='#7F7F7F', linewidth=0.5)
+ax2.grid(which='minor', color='#DDDDDD', linewidth=0.5)
+
 plt.show()
